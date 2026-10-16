@@ -1,0 +1,15 @@
+name: Step Types
+
+on:
+  workflow-dispatch:
+
+jobs:
+  learning:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: print("Hello beginner")
+        shell: python
+  pushing:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "Hello big  head"
