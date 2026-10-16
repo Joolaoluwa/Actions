@@ -1,7 +1,7 @@
 name: Step Types
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   learning:
