@@ -7,7 +7,7 @@ jobs:
   job1:
     runs-on: ubuntu-24.04
     steps:
-      - run: character = (smart stupid) echo "You are a ${character[@]}"
+      - run: echo "You are a stupid character"
 
   job2:
     runs-on: ubuntu-24.04
