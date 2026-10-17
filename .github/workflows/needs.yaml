@@ -17,3 +17,5 @@ jobs:
     needs:
       - job1
       - job2
+    steps:
+      - run: echo "Parallel runnnnnn"
