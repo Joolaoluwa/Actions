@@ -1,0 +1,19 @@
+name: nesting
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo ("Smart" "Stupid")
+  job2:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "Hello big head"
+  job3:
+    runs-on: ubuntu-24.04
+    needs:
+      - job1
+      - job2
